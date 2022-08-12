@@ -24,11 +24,10 @@
     <script>
 document.querySelector(".fut").addEventListener("click", ()=>{
     var audio = new Audio("future.mp3");
+if(audio.paused){
 audio.play();
-
-if(audio.played){
-audio.pause();
 }
+audio.pause();
 
 })
 
